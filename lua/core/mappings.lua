@@ -6,7 +6,7 @@ M.general = {
   i = {
     -- go to  beginning and end
     ["<C-b>"] = { "<ESC>^i", "Beginning of line" },
-    ["<C-e>"] = { "<End>", "End of line" },
+    ["<C-E>"] = { "<End>", "End of line" },
 
     -- navigate within insert mode
     ["<C-h>"] = { "<Left>", "Move left" },
@@ -18,8 +18,8 @@ M.general = {
   n = {
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
     -- switch between windows
-    ["<C-h>"] = { "<C-w>h", "Window left" },
-    ["<C-l>"] = { "<C-w>l", "Window right" },
+    ["<leader>q"] = { "<C-w>h", "Window left" },
+    ["<leader>e"] = { "<C-w>l", "Window right" },
     ["<C-j>"] = { "<C-w>j", "Window down" },
     ["<C-k>"] = { "<C-w>k", "Window up" },
 
@@ -92,7 +92,7 @@ M.tabufline = {
     },
 
     -- close buffer + hide terminal buffer
-    ["<leader>x"] = {
+    ["<C-w>"] = {
       function()
         require("nvchad_ui.tabufline").close_buffer()
       end,
@@ -212,7 +212,7 @@ M.lspconfig = {
       "Goto next",
     },
 
-    ["<leader>q"] = {
+    ["<leader>d"] = {
       function()
         vim.diagnostic.setloclist()
       end,
@@ -250,7 +250,7 @@ M.nvimtree = {
     ["<leader>l"] = { "<cmd> NvimTreeToggle <CR>", "Toggle nvimtree" },
 
     -- focus
-    ["<leader>e"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
+    ["<leader>//"] = { "<cmd> NvimTreeFocus <CR>", "Focus nvimtree" },
   },
 }
 
