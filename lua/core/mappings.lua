@@ -9,13 +9,20 @@ M.general = {
     ["<C-E>"] = { "<End>", "End of line" },
 
     -- navigate within insert mode
-    ["<C-h>"] = { "<Left>", "Move left" },
-    ["<C-l>"] = { "<Right>", "Move right" },
-    ["<C-j>"] = { "<Down>", "Move down" },
-    ["<C-k>"] = { "<Up>", "Move up" },
+    -- ["<C-h>"] = { "<Left>", "Move left" },
+    -- ["<C-l>"] = { "<Right>", "Move right" },
+    -- ["<C-j>"] = { "<Down>", "Move down" },
+    -- ["<C-k>"] = { "<Up>", "Move up" },
   },
 
+
+
   n = {
+
+    --Move line of text
+    ["<C-h>"] = { "ddp", "Move code line down"}, 
+    ["<C-u>"] = { "ddkP", "Move code line up"},
+
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
     -- switch between windows
     ["<leader>q"] = { "<C-w>h", "Window left" },
@@ -25,7 +32,6 @@ M.general = {
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
-
     -- Copy all
     ["<C-c>"] = { "<cmd> %y+ <CR>", "Copy whole file" },
 
