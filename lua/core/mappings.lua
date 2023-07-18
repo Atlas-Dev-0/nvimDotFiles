@@ -15,15 +15,14 @@ M.general = {
     -- ["<C-k>"] = { "<Up>", "Move up" },
   },
 
-
-
   n = {
 
     --Move line of text
-    ["<C-h>"] = { "ddp", "Move code line down"}, 
-    ["<C-u>"] = { "ddkP", "Move code line up"},
+    ["<C-h>"] = { "ddp", "Move code line down" }, 
+    ["<C-u>"] = { "ddkP", "Move code line up" },
 
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
+
     -- switch between windows
     ["<leader>q"] = { "<C-w>h", "Window left" },
     ["<leader>e"] = { "<C-w>l", "Window right" },
