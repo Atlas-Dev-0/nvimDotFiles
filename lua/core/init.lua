@@ -1,5 +1,6 @@
 local opt = vim.opt
 local g = vim.g
+local cmd = vim.cmd
 local config = require("core.utils").load_config()
 
 -------------------------------------- globals -----------------------------------------
@@ -39,8 +40,15 @@ opt.signcolumn = "yes"
 opt.splitbelow = true
 opt.splitright = true
 opt.termguicolors = true
-opt.timeoutlen = 400
+opt.timeoutlen = 200
 opt.undofile = true
+
+-- add :W and :Q as acceptable commands
+cmd [[
+  
+    cnoreabbrev W w
+    cnoreabbrev Q q
+]]
 
 -- interval for writing swap file to disk, also used by gitsigns
 opt.updatetime = 250
