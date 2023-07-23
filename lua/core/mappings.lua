@@ -63,7 +63,7 @@ M.general = {
   },
 
   v = {
-    --from the primagean mappings "move selected lines up and down"
+    --from the primeagen mappings "move selected lines up and down"
     ["J"] = { ":m '>+1<CR>gv=gv", "move selected lines up" },
     ["K"] = { ":m '<-2<CR>gv=gv", "move selected lines down" },
 
@@ -71,7 +71,11 @@ M.general = {
     ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
   },
 
-  x = {
+  x = {    
+    --Added another remap from the primeagen
+    ["<leader>p"] = {'\"_dP', "Paste Over without copying the removed word"},
+  
+
     ["j"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
     ["k"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
     -- Don't copy the replaced text after pasting in visual mode
