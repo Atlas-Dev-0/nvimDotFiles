@@ -63,6 +63,10 @@ M.general = {
   },
 
   v = {
+    --from the primagean mappings "move selected lines up and down"
+    ["J"] = { ":m '>+1<CR>gv=gv", "move selected lines up" },
+    ["K"] = { ":m '<-2<CR>gv=gv", "move selected lines down" },
+
     ["<Up>"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
     ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
   },
