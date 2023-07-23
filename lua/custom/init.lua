@@ -6,3 +6,5 @@ autocmd("VimResized", {
   command = "tabdo wincmd =",
 })
 
+
+
