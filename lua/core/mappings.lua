@@ -17,8 +17,8 @@ M.general = {
 
   n = {
     --Move line of text
-    ["<C-h>"] = { "ddp", "Move code line down" },
-    ["<C-u>"] = { "ddkP", "Move code line up" },
+    ["<C-Up>"] = { "ddkP", "Move code line up" },
+    ["<C-Down>"] = { "ddp", "Move code line down" },
 
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
 
