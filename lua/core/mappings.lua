@@ -13,20 +13,24 @@ M.general = {
     -- ["<C-l>"] = { "<Right>", "Move right" },
     -- ["<C-j>"] = { "<Down>", "Move down" },
     -- ["<C-k>"] = { "<Up>", "Move up" },
+
+    --The BEST REMAP FUNCTION OF ALL TIME!!!!
+    ["<C-Right>"] = { ":lua SmartCtrlRight()<CR>", opts = { noremap = true, silent = true } },
   },
 
   n = {
     --Move line of text
+    ["<C-Right>"] = { ":lua SmartCtrlRight()<CR>", opts = { noremap = true, silent = true } },
     ["<C-Up>"] = { "ddkP", "Move code line up" },
-    ["<C-Down>"] = { "ddp", "Move code line down" },
 
+    ["<C-Down>"] = { "ddp", "Move code line down" },
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
 
     -- switch between windows
     ["<leader>q"] = { "<C-w>h", "Window left" },
     ["<leader>e"] = { "<C-w>l", "Window right" },
-    ["<C-j>"] = { "<C-w>j", "Window down" },
-    ["<C-k>"] = { "<C-w>k", "Window up" },
+    -- ["<C-j>"] = { "<C-w>j", "Window down" },
+    -- ["<C-k>"] = { "<C-w>k", "Window up" },
 
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
@@ -71,10 +75,9 @@ M.general = {
     ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
   },
 
-  x = {    
+  x = {
     --Added another remap from the primeagen
-    ["<leader>p"] = {'\"_dP', "Paste Over without copying the removed word"},
-  
+    ["<leader>p"] = { '"_dP', "Paste Over without copying the removed word" },
 
     ["j"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
     ["k"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },

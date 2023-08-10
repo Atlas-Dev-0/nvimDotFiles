@@ -9,7 +9,6 @@ M.general = {
     ["<S-Down>"] = { "<Nop>", opts = { noremap = true, silent = true } },
     ["x"] = { '"_d', opts = { noremap = true, silent = true } },
   },
-
   v = {
     ["x"] = { '"_d', opts = { noremap = true, silent = true } },
     ["<S-Up>"] = { "<Nop>", opts = { noremap = true, silent = true } },
