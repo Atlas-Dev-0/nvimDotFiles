@@ -14,16 +14,16 @@ M.general = {
     -- ["<C-j>"] = { "<Down>", "Move down" },
     -- ["<C-k>"] = { "<Up>", "Move up" },
 
-    --The BEST REMAP FUNCTION OF ALL TIME!!!!
-    ["<C-Right>"] = { ":lua SmartCtrlRight()<CR>", opts = { noremap = true, silent = true } },
   },
 
   n = {
-    --Move line of text
+    --The BEST REMAP FUNCTION OF ALL TIME!!!!
     ["<C-Right>"] = { ":lua SmartCtrlRight()<CR>", opts = { noremap = true, silent = true } },
+   
+    --Move line of text
     ["<C-Up>"] = { "ddkP", "Move code line up" },
-
     ["<C-Down>"] = { "ddp", "Move code line down" },
+    
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
 
     -- switch between windows
