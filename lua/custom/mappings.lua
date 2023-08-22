@@ -7,7 +7,7 @@ M.general = {
     ["<C-a>"] = { "ggVG", "select all of the lines of code" },
     ["<S-Up>"] = { "<Nop>", opts = { noremap = true, silent = true } },
     ["<S-Down>"] = { "<Nop>", opts = { noremap = true, silent = true } },
-    ["x"] = { '"_d', opts = { noremap = true, silent = true } },
+    ["d"] = { '"_d', opts = { noremap = true, silent = true } },
   },
   v = {
     ["x"] = { '"_d', opts = { noremap = true, silent = true } },
