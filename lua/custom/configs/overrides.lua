@@ -12,7 +12,6 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
-    "python",
   },
   indent = {
     enable = true,
@@ -32,8 +31,6 @@ M.mason = {
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
-    "vscode-css-language-server",
-    "vscode-html-language-server",
     "deno",
     "prettier",
 
