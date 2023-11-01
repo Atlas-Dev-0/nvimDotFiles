@@ -13,17 +13,16 @@ M.general = {
     -- ["<C-l>"] = { "<Right>", "Move right" },
     -- ["<C-j>"] = { "<Down>", "Move down" },
     -- ["<C-k>"] = { "<Up>", "Move up" },
-
   },
 
   n = {
     --The BEST REMAP FUNCTION OF ALL TIME!!!!
     ["<C-Right>"] = { ":lua SmartCtrlRight()<CR>", opts = { noremap = true, silent = true } },
-   
+
     --Move line of text
     ["<C-Up>"] = { "ddkP", "Move code line up" },
     ["<C-Down>"] = { "ddp", "Move code line down" },
-    
+
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
 
     -- switch between windows
@@ -107,6 +106,13 @@ M.tabufline = {
     },
 
     -- close buffer + hide terminal buffer
+    ["<C-W>"] = {
+      function()
+        require("nvchad.tabufline").close_buffer()
+      end,
+      "Close buffer",
+    },
+
     ["<C-w>"] = {
       function()
         require("nvchad.tabufline").close_buffer()
