@@ -106,14 +106,14 @@ M.tabufline = {
     },
 
     -- close buffer + hide terminal buffer
-    ["<C-W>"] = {
+    ["<C-C>"] = {
       function()
         require("nvchad.tabufline").close_buffer()
       end,
       "Close buffer",
     },
 
-    ["<C-w>"] = {
+    ["<C-c>"] = {
       function()
         require("nvchad.tabufline").close_buffer()
       end,
