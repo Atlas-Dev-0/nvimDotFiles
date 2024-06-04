@@ -16,6 +16,7 @@ M.general = {
   },
 
   n = {
+
     --The BEST REMAP FUNCTION OF ALL TIME!!!!
     ["<C-Right>"] = { ":lua SmartCtrlRight()<CR>", opts = { noremap = true, silent = true } },
 

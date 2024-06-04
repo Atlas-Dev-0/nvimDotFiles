@@ -2,6 +2,7 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
+    "php",
     "vim",
     "lua",
     "html",
@@ -37,6 +38,10 @@ M.mason = {
     -- c/cpp stuff
     "clangd",
     "clang-format",
+
+    --php stuff
+    "phpactor",
+
   },
 }
 

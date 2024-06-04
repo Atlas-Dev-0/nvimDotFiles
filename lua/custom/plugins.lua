@@ -5,6 +5,8 @@ local plugins = {
 
   -- Override plugin definition options
 
+
+
   {
     "neovim/nvim-lspconfig",
     dependencies = {

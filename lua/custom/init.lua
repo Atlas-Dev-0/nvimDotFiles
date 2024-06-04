@@ -11,7 +11,6 @@
 local autocmd = vim.api.nvim_create_autocmd
 
 
-
 --My fuctions 
 function SmartCtrlRight()
   local col = vim.fn.col "."
@@ -28,8 +27,6 @@ function SmartCtrlRight()
   end
 end
 ------
-
-
 
 -- Auto resize panes when resizing nvim window
 autocmd("VimResized", {
